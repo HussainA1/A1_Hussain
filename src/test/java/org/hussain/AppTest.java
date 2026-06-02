@@ -11,5 +11,6 @@ public class AppTest
         given().log().all().header("Content-Type","application/json").queryParam("key","qaclick123").queryParam("place_id", "12345")
                 .when().get("maps/api/place/get/json")
                 .then().log().all().statusCode(200);
+
     }
 }
